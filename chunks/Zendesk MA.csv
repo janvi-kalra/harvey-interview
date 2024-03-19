@@ -1,42 +1,92 @@
-Document,Section Header,Section Text,Page Number
-Zendesk MA.Pdf,Closing and Effective Time,UNDEFINED,72
-Zendesk MA.Pdf,Accounting Treatment,UNDEFINED,72
-Zendesk MA.Pdf,Appraisal Rights,UNDEFINED,72
-Zendesk MA.Pdf,Litigation Related to the Merger,UNDEFINED,77
-Zendesk MA.Pdf,Material U.S. Federal Income Tax Consequences of the Merger,UNDEFINED,78
-Zendesk MA.Pdf,Regulatory Approvals Required for the Merger,UNDEFINED,81
-Zendesk MA.Pdf,THE MERGER AGREEMENT,UNDEFINED,83
-Zendesk MA.Pdf,Effects of the Merger; Directors and Officers; Certificate of Incorporation; Bylaws,UNDEFINED,83
-Zendesk MA.Pdf,Closing and Effective Time,UNDEFINED,84
-Zendesk MA.Pdf,Merger Consideration,UNDEFINED,84
-Zendesk MA.Pdf,Exchange and Payment Procedures,UNDEFINED,84
-Zendesk MA.Pdf,Withholding,UNDEFINED,85
-Zendesk MA.Pdf,Representations and Warranties,UNDEFINED,85
-Zendesk MA.Pdf,Conduct of Business Pending the Merger,UNDEFINED,89
-Zendesk MA.Pdf,Restrictions on Solicitation of Alternative Proposals,UNDEFINED,90
-Zendesk MA.Pdf,The Board of Directors’ Recommendation; Change of Recommendation,UNDEFINED,92
-Zendesk MA.Pdf,Employee Benefits,UNDEFINED,93
-Zendesk MA.Pdf,Debt Financing and Preferred Equity Financing,UNDEFINED,94
-Zendesk MA.Pdf,Cooperation as to Debt Financing and Preferred Equity Financing,UNDEFINED,95
-Zendesk MA.Pdf,Cooperation as to Certain Indebtedness,UNDEFINED,96
-Zendesk MA.Pdf,Indemnification and Insurance,UNDEFINED,98
-Zendesk MA.Pdf,Other Covenants,UNDEFINED,99
-Zendesk MA.Pdf,Conditions to the Closing of the Merger,UNDEFINED,101
-Zendesk MA.Pdf,Termination of the Merger Agreement,UNDEFINED,103
-Zendesk MA.Pdf,Termination Fees,UNDEFINED,104
-Zendesk MA.Pdf,Specific Enforcement,UNDEFINED,105
-Zendesk MA.Pdf,Limitations of Liability,UNDEFINED,106
-Zendesk MA.Pdf,Expenses,UNDEFINED,106
-Zendesk MA.Pdf,Amendments and Waivers,UNDEFINED,106
-Zendesk MA.Pdf,Governing Law,UNDEFINED,106
-Zendesk MA.Pdf,PROPOSAL 2: THE COMPENSATION PROPOSAL,UNDEFINED,107
-Zendesk MA.Pdf,PROPOSAL 3: THE ADJOURNMENT PROPOSAL,UNDEFINED,108
-Zendesk MA.Pdf,SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT,UNDEFINED,109
-Zendesk MA.Pdf,Section 16(a) Beneficial Ownership Reporting Compliance,UNDEFINED,110
-Zendesk MA.Pdf,FUTURE STOCKHOLDER PROPOSALS,UNDEFINED,111
-Zendesk MA.Pdf,WHERE YOU CAN FIND MORE INFORMATION,UNDEFINED,112
-Zendesk MA.Pdf,MISCELLANEOUS,UNDEFINED,113
-Zendesk MA.Pdf,ANNEX A - AGREEMENT AND PLAN OF MERGER,UNDEFINED,A-1
-Zendesk MA.Pdf,ANNEX B - OPINION OF QATALYST PARTNERS LP,UNDEFINED,B-1
-Zendesk MA.Pdf,ANNEX C - OPINION OF GOLDMAN SACHS & CO. LLC,UNDEFINED,C-1
-Zendesk MA.Pdf,ANNEX D - SECTION 262 OF THE GENERAL CORPORATION LAW OF THE STATE OF DELAWARE,UNDEFINED,D-1
+Document,Section Header,Referenced Page Number,Zero Indexed Page Number,ClassificationSection Text
+Zendesk MA.Pdf,SUMMARY,1,9,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Parties Involved in the Merger,1,9,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,The Merger,2,9,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Merger Consideration,2,10,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Material U.S. Federal Income Tax Consequences of the Merger,3,11,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Appraisal Rights,4,12,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Litigation Related to the Merger,4,12,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Regulatory Approvals Required for the Merger,5,13,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Closing Conditions,5,13,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Financing of the Merger,6,14,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Required Stockholder Approval,7,15,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,The Special Meeting,8,16,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Recommendation of the Zendesk Board of Directors,8,16,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Opinion of Qatalyst Partners LP,9,17,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Opinion of Goldman Sachs & Co. LLC,9,17,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Interests of Zendesk’s Executive Officers and Directors in the Merger,9,17,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Restrictions on Solicitation of Alternative Proposals,10,18,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Termination of the Merger Agreement,11,19,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Effect on Zendesk If the Merger Is Not Completed,11,19,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,QUESTIONS AND ANSWERS,12,20,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,FORWARD-LOOKING STATEMENTS,19,27,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,THE SPECIAL MEETING,21,16,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,"Date, Time and Place",21,29,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Purpose of the Special Meeting,21,29,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Record Date; Shares Entitled to Vote; Quorum,21,29,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Vote Required; Abstentions and Broker Non-Votes,21,29,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Stock Ownership and Interests of Certain Persons,22,30,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Voting at the Special Meeting,22,30,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Revocability of Proxies,23,31,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Board of Directors’ Recommendation,23,31,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Solicitation of Proxies,23,31,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Anticipated Date of Completion of the Merger,24,32,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Appraisal Rights,24,32,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Delisting and Deregistration of Zendesk Common Stock,24,32,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Other Matters,25,33,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Householding of Special Meeting Materials,25,33,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Questions and Additional Information,25,33,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,PROPOSAL 1: ADOPTION OF THE MERGER AGREEMENT,26,34,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Parties Involved in the Merger,26,34,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Effect of the Merger,27,35,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Effect on Zendesk If the Merger Is Not Completed,27,35,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Merger Consideration,27,35,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Background of the Merger,28,36,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Recommendation of the Board of Directors and Reasons for the Merger,40,48,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Opinion of Qatalyst Partners LP,46,54,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Opinion of Goldman Sachs & Co. LLC,52,61,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Capped Call Transactions,61,70,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Certain Financial Projections,62,71,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Interests of Zendesk’s Executive Officers and Directors in the Merger,65,74,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Financing of the Merger,70,79,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Closing and Effective Time,72,81,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Accounting Treatment,72,81,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Appraisal Rights,72,81,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Litigation Related to the Merger,77,86,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Material U.S. Federal Income Tax Consequences of the Merger,78,87,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Regulatory Approvals Required for the Merger,81,90,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,THE MERGER AGREEMENT,83,92,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Effects of the Merger; Directors and Officers; Certificate of Incorporation; Bylaws,83,92,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Closing and Effective Time,84,93,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Merger Consideration,84,93,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Exchange and Payment Procedures,84,93,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Withholding,85,94,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Representations and Warranties,85,94,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Conduct of Business Pending the Merger,89,98,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Restrictions on Solicitation of Alternative Proposals,90,99,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,The Board of Directors’ Recommendation; Change of Recommendation,92,101,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Employee Benefits,93,102,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Debt Financing and Preferred Equity Financing,94,103,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Cooperation as to Debt Financing and Preferred Equity Financing,95,104,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Cooperation as to Certain Indebtedness,96,105,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Indemnification and Insurance,98,107,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Other Covenants,99,108,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Conditions to the Closing of the Merger,101,110,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Termination of the Merger Agreement,103,112,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Termination Fees,104,113,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Specific Enforcement,105,114,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Limitations of Liability,106,115,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Expenses,106,115,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Amendments and Waivers,106,115,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Governing Law,106,115,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,PROPOSAL 2: THE COMPENSATION PROPOSAL,107,116,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,PROPOSAL 3: THE ADJOURNMENT PROPOSAL,108,117,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT,109,118,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,Section 16(a) Beneficial Ownership Reporting Compliance,110,119,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,FUTURE STOCKHOLDER PROPOSALS,111,120,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,WHERE YOU CAN FIND MORE INFORMATION,112,121,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,MISCELLANEOUS,113,122,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,ANNEX A - AGREEMENT AND PLAN OF MERGER,A-1,123,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,ANNEX B - OPINION OF QATALYST PARTNERS LP,B-1,195,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,ANNEX C - OPINION OF GOLDMAN SACHS & CO. LLC,C-1,197,UNDEFINED,UNDEFINED
+Zendesk MA.Pdf,ANNEX D - SECTION 262 OF THE GENERAL CORPORATION LAW OF THE STATE OF DELAWARE,D-1,200,UNDEFINED,UNDEFINED
