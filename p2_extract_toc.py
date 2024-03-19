@@ -111,36 +111,17 @@ def iterate_folder(folder_path):
             extract_toc_for_pdf(pdf_path, toc_pages)
 
 
-# iterate_folder("dataset")
+# Main
+iterate_folder("dataset")
 
-# Unit Tests
+# # Unit Tests
 # files = [
 #     'Zendesk MA.Pdf',
 #     'Coupa Software Inc_20230123_DEFM14A_20571922_4573621.Pdf',
 #     'Archaea Energy Inc._20221114_DEFM14A_20445339_4545162.Pdf',
 #     'Ranger Oil Corp_20230518_DEFM14A_20894462_4669228.Pdf',
 # ]
-
-files = [
-    'TEGNA INC_20220413_DEFM14A_20013265_4441404.Pdf',
-    '1Life Healthcare Inc_20220824_DEFM14A_20299948_4508791.Pdf',
-    'Ping Identity Holding Corp._20220916_DEFM14A_20342713_4518798.Pdf',
-    'SPX FLOW, Inc._20220201_DEFM14A_19813071_4373457.Pdf',
-    'Watermark Lodging Trust, Inc._20220615_DEFM14A_20166959_4476791.Pdf',
-    'ForgeRock, Inc._20221208_DEFM14A_20498573_4557310.Pdf',
-    'ALLEGHANY CORP DE_20220429_DEFM14A_20052995_4452227.Pdf',
-    'Echo Global Logistics, Inc._20211021_DEFM14A_19595960_4315476.Pdf',
-    'Medallia, Inc._20210914_DEFM14A_19531748_4294624.Pdf',
-    'TENNECO INC_20220426_DEFM14A_20034100_4448087.Pdf',
-    'MERITOR, INC._20220418_DEFM14A_20019751_4444368.Pdf',
-    'MAGELLAN HEALTH INC_20210219_DEFM14A_19054835_4126183.Pdf',
-    'DUKE REALTY CORP_20220802_DEFM14A_20251209_4495981.Pdf',
-    'AEROJET ROCKETDYNE HOLDINGS, INC._20210205_DEFM14A_19007640_4113036.Pdf',
-    'Global Blood Therapeutics, Inc._20220829_DEFM14A_20311227_4510555.Pdf',
-    'Archaea Energy Inc._20221114_DEFM14A_20445339_4545162.Pdf',
-]
-
-for file in files:
-    pdf_path_global = f'dataset/{file}'
-    extract_toc_for_pdf(pdf_path_global,
-                        sorted(TOC_PAGES_PART_ONE_MAPPING[file]))
+# for file in files:
+#     pdf_path_global = f'dataset/{file}'
+#     extract_toc_for_pdf(pdf_path_global,
+#                         sorted(TOC_PAGES_PART_ONE_MAPPING[file]))

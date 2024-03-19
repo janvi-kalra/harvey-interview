@@ -4,6 +4,7 @@ from openai import OpenAI
 import ast
 import csv
 import sys
+import re
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 csv.field_size_limit(sys.maxsize)
@@ -66,16 +67,17 @@ def get_search_end(lines, curr_line, doc):
 
 # Remove all text from the page before the section starts.
 def trim_search_start_page(text, curr_section_name):
-    parts = text.split(curr_section_name, 1)
-    return parts[1] if len(parts) > 1 else parts[0]
+    # Using regex to split to take case sensitivity into account
+    parts = re.split(f'({re.escape(curr_section_name)})', text, maxsplit=1)
+    return parts[2] if len(parts) > 2 else parts[0]
 
 
 # If there is a section after the current one, remove all text with contents from the next section.
 def trim_search_end_page(text, next_section_name):
     if next_section_name:
-        parts = text.split(next_section_name, 1)
+        # Using regex to split to take case sensitivity into account
+        parts = re.split(f'({re.escape(next_section_name)})', text, maxsplit=1)
         return parts[0].strip()
-    print(text)
     return text
 
 
@@ -94,9 +96,9 @@ def add_section_bodies(pdf_path):
     updated_data = [header]
 
     for i, line in enumerate(lines):
-        if (i != 2):
-            updated_data.append(line)
-            continue
+        # if (i != 4):
+        #     updated_data.append(line)
+        #     continue
         section_name = line[Section_Name_Index]
         text = ""
 
@@ -105,9 +107,9 @@ def add_section_bodies(pdf_path):
         search_end = get_search_end(lines, i, doc)
 
         for page_num in range(search_start, search_end):
-            print(
-                f"page_num {page_num}, search_start {search_start} search_end {search_end}"
-            )
+            # print(
+            #     f"searching for section_name {section_name}: search_start {search_start + 1} search_end {search_end}"
+            # )
             page = doc.load_page(page_num)
             page_text = page.get_text()
             if page_num == search_start:
@@ -117,7 +119,7 @@ def add_section_bodies(pdf_path):
 
             text += page_text
 
-        print(f'TEXT: \n {text}')
+        # print(f'TEXT: \n {text}')
 
         # classification = classify(section_name, text)
         classification = "None"
