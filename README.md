@@ -1,6 +1,21 @@
 # harvey-interview
 
-## Extracting the Table of Contents
+## High Level Approach 
+
+1. Use an LLM to identify which pages in a PDF are the table of contents 
+2. On the relevant TOC pages from step 1, use an LLM to extract the section header names and referenced page numbers. Use PyNumPDF's link library to extract the _real_ zero-indexed page number. Add columns to their respective CSV files. 
+3. To populate the section body 
+
+## Implementation Details, Assumptions, and Decisions
+
+### Step 1: Identify TOC
+
+
+
+## Limitations
+
+## Repro Steps
+
 
 ### 1
 
@@ -33,7 +48,8 @@ Notice that all the TOC pages are i/ii/iii and before the first page
 
 # part 4 - classification
 
+reason we split it up is because it's not reliable. make more specific prompts. for latency.
 
-reason we split it up is because it's not reliable. make more specific prompts. for latency. 
+## Assumptions
 
-
+1. TOC has links.

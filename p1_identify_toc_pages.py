@@ -7,14 +7,23 @@ from openai import OpenAI
 # Further, we can assume that the table of contents is always within the first 20 pages of a document so we
 # only need to search the first 20 pages for efficiency.
 
-# TODO(janvi): Make this prompt better. It should be possible to do this with very high fidelity.
-# somewhere between 3 and 14
-
 EXAMPLE_1_TRUE_INPUT = 'TABLE OF CONTENTS \n SUMMARY TERM SHEET \n 1 \n The Special General Meeting \n 1 \n Record Date and Quorum \n 1 \n Required Votes \n 2 \n The Parties to the Merger \n 2 \n The Merger Proposal \n 3 \n When the Merger Becomes Effective \n 4'
 EXAMPLE_2_FALSE_INPUT = 'The Merger Agreement (Page 57) \n Treatment of Common Shares (Page 57) \n At the effective time, each common share issued and outstanding immediately prior to the effective time (other than any common share that is owned by Argo Group as treasury shares, by Argo Group, Brookfield Reinsurance. \n'
 IS_TOC_PAGE_PROMPT = f"You are an expert at assessing whether the provided text excerpt belongs to a Table of Contents. A Table of Contents is a collection of titles and their corresponding number. When presented with text, carefully evaluate its characteristics and if it aligns with the criteria of being part of a Table of Contents, respond with 'true'. If it does not meet these criteria, respond with 'false'. Your analysis should focus on distinguishing between Table of Contents entries and regular pages of text. \n Example 1: \n Input: {EXAMPLE_1_TRUE_INPUT} \n Output: 'true'.."
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+
+
+def has_links(page):
+    # In order to be a TOC page, the page is likely to have >= 1 link on the page
+    links = page.get_links()
+    num_links = 0
+    for link in links:
+        if link['kind'] == fitz.LINK_GOTO:
+            link_text = page.get_text("text", clip=link['from'])
+            if link_text.lower().strip('\n') != "table of contents":
+                num_links += 1
+    return num_links
 
 
 def identify_toc_pages(pdf_path):
@@ -39,10 +48,12 @@ def identify_toc_pages(pdf_path):
                                                         page_content
                                                     }])
         result = completion.choices[0].message.content
-        print(result)
         if result == "true" or result == "'true'":
-            toc_pages.add(page_num)
             print(f"page number {page_num + 1}")
+            if has_links(page) >= 1:
+                toc_pages.add(page_num)
+            else:
+                print('discarded bc not enough links on the page')
 
     return toc_pages
 
@@ -58,4 +69,15 @@ def iterate_folder(folder_path):
 
 
 iterate_folder("dataset")
-# print(extract_toc_pages('dataset/Zendesk MA.Pdf'))
+
+# # Unit tests
+# print(identify_toc_pages('dataset/Zendesk MA.Pdf'))
+# print(
+#     identify_toc_pages(
+#         'dataset/Coupa Software Inc_20230123_DEFM14A_20571922_4573621.pdf'))
+# print(
+#     identify_toc_pages(
+#         'dataset/Archaea Energy Inc._20221114_DEFM14A_20445339_4545162.Pdf'))
+# print(
+#     identify_toc_pages(
+#         'dataset/Ranger Oil Corp_20230518_DEFM14A_20894462_4669228.Pdf'))
