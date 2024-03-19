@@ -8,11 +8,13 @@ import sys
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 csv.field_size_limit(sys.maxsize)
 
-CLASSIFY_PROMPT = "You are an expert at classifying whether the provided text relates to the Termination, Indemnification, or Confidentiality of an acquisition. Given the section name and the section content, return Termination, Indemnification, Confidentiality, or None"
+CLASSIFY_PROMPT = "As a specialist in legal document analysis, your task is to determine the specific category that a given text segment belongs to. The categories are Termination, Indemnification, Confidentiality, or None. Given the section title and section content, return Termination, Indemnification, Confidentiality, or None. Weigh the section title more in your classification decision. Utilize your expertise to make accurate and clear categorizations based on the legal terminology and context presented in each text segment."
 
-
-def clean(s):
-    return s.strip("\n").replace("\n", " ")
+# Csv Columns
+Section_Name_Index = 1
+Zero_Indexed_Page_Number_Index = 3
+Classification_Index = 4
+Section_Text_Index = 5
 
 
 def truncate_to_token_limit(text):
@@ -35,43 +37,46 @@ def classify(section_name, section_body):
             "role":
             "user",
             "content":
-            f"section name: {section_name}. section content: {truncated_section_body}"
+            f"section title: {section_name}. section content: {truncated_section_body}"
         }])
     result = completion.choices[0].message.content
-    if result == "Termination" or result == "Indemnification" or result == "Confidentiality" or result == "None":
+    if result == "Termination" or result == "Indemnification" or result == "Confidentiality":
         return result
+    print(f'result {result}')
     return "None"
 
 
 def get_next_section_name(lines, curr_line):
     # The next line in the CSV represents the next section
     if curr_line + 1 < len(lines):
-        next_section_name = lines[curr_line + 1][1]
-        return clean(next_section_name)
-    # It is the last section in the TOC
+        next_section_name = lines[curr_line + 1][Section_Name_Index]
+        return next_section_name
+    # Is the last section in the TOC
     return None
 
 
 def get_search_end(lines, curr_line, doc):
-    # Search all pages until the next section.
+    # Search all pages until the start of the next section.
     if curr_line + 1 < len(lines):
         # Search an extra page (+1) bc the next section might start on the same page as the current one
-        return lines[curr_line + 1][2] + 1
+        return int(lines[curr_line + 1][Zero_Indexed_Page_Number_Index]) + 1
     # If this is the last section in the TOC, search till the end of the document
     return doc.page_count
 
 
 # Remove all text from the page before the section starts.
-def trim_text(text, curr_section_name, next_section_name):
+def trim_search_start_page(text, curr_section_name):
     parts = text.split(curr_section_name, 1)
-    trimmed_text = parts[1] if len(parts) > 1 else parts[0]
+    return parts[1] if len(parts) > 1 else parts[0]
 
-    # If there is a section after the current one, remove all text with contents from the next section.
+
+# If there is a section after the current one, remove all text with contents from the next section.
+def trim_search_end_page(text, next_section_name):
     if next_section_name:
-        parts = trimmed_text.split(next_section_name, 1)
-        trimmed_text = parts[0].strip()
-
-    return trimmed_text
+        parts = text.split(next_section_name, 1)
+        return parts[0].strip()
+    print(text)
+    return text
 
 
 def add_section_bodies(pdf_path):
@@ -80,34 +85,46 @@ def add_section_bodies(pdf_path):
         'chunks',
         os.path.basename(pdf_path).replace('.Pdf', '.csv'))
 
-    # First, read all the data from the CSV file
+    # Read all the data from the CSV file
     with open(csv_file_path, mode='r', newline='', encoding='utf-8') as file:
         reader = csv.reader(file)
-        header = next(reader)  # Read the header
-        header.append(
-            "Classification")  # Add 'Classification' column to the header
-        lines = list(reader)  # Read all rows into a list
+        header = next(reader)
+        lines = list(reader)
 
     updated_data = [header]
 
     for i, line in enumerate(lines):
-        section_name = line[1]
+        if (i != 2):
+            updated_data.append(line)
+            continue
+        section_name = line[Section_Name_Index]
         text = ""
 
-        search_start = line[3]
+        search_start = int(line[Zero_Indexed_Page_Number_Index])
         next_section_name = get_next_section_name(lines, i)
         search_end = get_search_end(lines, i, doc)
 
         for page_num in range(search_start, search_end):
+            print(
+                f"page_num {page_num}, search_start {search_start} search_end {search_end}"
+            )
             page = doc.load_page(page_num)
-            text += page.get_text()
+            page_text = page.get_text()
+            if page_num == search_start:
+                page_text = trim_search_start_page(page_text, section_name)
+            if page_num == search_end - 1:
+                page_text = trim_search_end_page(page_text, next_section_name)
 
-        text = trim_text(text, section_name, next_section_name)
-        classification = classify(section_name, text)
+            text += page_text
+
+        print(f'TEXT: \n {text}')
+
+        # classification = classify(section_name, text)
+        classification = "None"
 
         # Formatting ensures that line breaks in the PDF do not overflow beyond current cell.
-        line[2] = f'"{text}"'
-        line.append(classification)
+        line[Section_Text_Index] = f'"{text}"'
+        line[Classification_Index] = classification
         updated_data.append(line)
 
     with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
@@ -128,6 +145,6 @@ def iterate_folder(folder_path):
 # iterate_folder("dataset")
 
 # Unit tests
-filename_global = 'ALKURI GLOBAL ACQUISITION CORP._20210930_DEFM14A_19561988_4303635.Pdf'
+filename_global = 'Zendesk MA.Pdf'
 pdf_path_global = f'dataset/{filename_global}'
 add_section_bodies(pdf_path_global)

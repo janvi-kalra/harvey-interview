@@ -1,42 +1,83 @@
-Document,Section Header,Section Text,Page Number
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Regulatory Approvals Required for the Mergers,UNDEFINED,100
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",THE MERGER AGREEMENT,UNDEFINED,102
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Explanatory Note Regarding the Merger Agreement,UNDEFINED,102
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Effects of the Mergers,UNDEFINED,102
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Closing and Effective Time of the Mergers,UNDEFINED,103
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Consideration To Be Received in the Mergers,UNDEFINED,103
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Excluded Shares of Company Capital Stock and OpCo Common Units,UNDEFINED,104
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Treatment of Company Equity Awards,UNDEFINED,104
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Treatment of Employee Stock Purchase Plan and Company Stock Plan,UNDEFINED,105
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Exchange and Payment Procedures,UNDEFINED,105
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Appraisal Rights,UNDEFINED,105
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Representations and Warranties,UNDEFINED,106
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Covenants Regarding Conduct of Business by the Company Pending the Company Merger Effective Time,UNDEFINED,109
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",No Solicitation,UNDEFINED,112
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Change in Company Board Recommendation,UNDEFINED,114
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Efforts to Obtain the Company Stockholder Approval,UNDEFINED,116
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Efforts to Consummate the Mergers,UNDEFINED,116
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Company Indebtedness,UNDEFINED,118
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Financing,UNDEFINED,121
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Indemnification and Insurance,UNDEFINED,122
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Employee Benefits Matters,UNDEFINED,122
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Additional Agreements,UNDEFINED,123
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Conditions to the Closing of the Mergers,UNDEFINED,123
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Termination of the Merger Agreement,UNDEFINED,124
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Termination Fees,UNDEFINED,126
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Fees and Expenses,UNDEFINED,127
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Withholding Taxes,UNDEFINED,127
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Amendment or Supplement,UNDEFINED,127
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf","Extension of Time, Waiver, etc.",UNDEFINED,127
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Governing Law,UNDEFINED,127
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Specific Enforcement,UNDEFINED,128
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROPOSAL 2: THE ADVISORY COMPENSATION PROPOSAL,UNDEFINED,129
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROPOSAL 3: THE ADJOURNMENT PROPOSAL,UNDEFINED,130
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT,UNDEFINED,131
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",FUTURE STOCKHOLDER PROPOSALS,UNDEFINED,135
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",WHERE YOU CAN FIND MORE INFORMATION,UNDEFINED,136
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",MISCELLANEOUS,UNDEFINED,137
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf","Annex A Agreement and Plan of Merger, dated as of March 1, 2023",UNDEFINED,A-1
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex B Opinion of Citigroup Global Markets Inc.,UNDEFINED,B-1
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex C Opinion of Goldman Sachs & Co. LLC,UNDEFINED,C-1
-"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex D Opinion of Barclays Capital Inc.,UNDEFINED,D-1
+Document,Section Header,Referenced Page Number,Zero Indexed Page Number,Classification,Section Text
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROXY STATEMENT,1,10,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",SUMMARY,3,12,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",QUESTIONS AND ANSWERS ABOUT THE SPECIAL MEETING OF STOCKHOLDERS AND THE MERGERS,16,25,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",CAUTIONARY NOTE REGARDING FORWARD-LOOKING STATEMENTS,26,35,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",THE SPECIAL MEETING,29,25,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf","Date, Time and Place",29,38,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Purpose of the Special Meeting,29,38,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Record Date; Shares Entitled to Vote; Quorum,29,38,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Vote Required; Abstentions and Broker Non-Votes,30,39,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Stock Ownership and Interests of Certain Persons,30,39,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Voting at the Special Meeting,31,40,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Revocability of Proxies,31,40,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Company Board’s Recommendation,32,41,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Solicitation of Proxies,32,41,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Anticipated Date of Completion of the Mergers,32,41,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Appraisal Rights,32,41,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Delisting and Deregistration of Radius Common Stock,33,42,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Other Matters,33,42,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Householding of Special Meeting Materials,33,42,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Questions and Additional Information,34,43,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROPOSAL 1: ADOPTION OF THE MERGER AGREEMENT,35,44,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Parties Involved in the Mergers,35,44,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Effects of the Mergers,36,45,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Effect on the Company If the Mergers Are Not Completed,36,45,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Merger Consideration,36,45,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Treatment of Employee Stock Purchase Plan and Company Stock Plan,38,47,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Background of the Mergers,38,47,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Recommendation of the Company Board and Reasons for the Mergers,55,64,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Opinion of Citi,62,71,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Opinion of Goldman Sachs,67,76,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Opinion of Barclays,74,83,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Certain Financial Forecasts,81,90,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Interests of the Company’s Directors and Executive Officers in the Mergers,84,93,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Voting and Support Agreements,91,100,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Rollover Agreements,91,100,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Tax Protection Agreement,92,101,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Financing of the Mergers,92,101,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Closing and Effective Times,92,101,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Litigation Related to the Mergers,93,102,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Appraisal Rights,94,103,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Material U.S. Federal Income Tax Consequences of the Mergers,98,107,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Regulatory Approvals Required for the Mergers,100,109,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",THE MERGER AGREEMENT,102,111,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Explanatory Note Regarding the Merger Agreement,102,111,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Effects of the Mergers,102,111,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Closing and Effective Time of the Mergers,103,112,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Consideration To Be Received in the Mergers,103,112,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Excluded Shares of Company Capital Stock and OpCo Common Units,104,113,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Treatment of Company Equity Awards,104,113,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Treatment of Employee Stock Purchase Plan and Company Stock Plan,105,114,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Exchange and Payment Procedures,105,114,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Appraisal Rights,105,114,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Representations and Warranties,106,115,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Covenants Regarding Conduct of Business by the Company Pending the Company Merger,Effective Time,118,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",No Solicitation,112,121,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Change in Company Board Recommendation,114,123,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Efforts to Obtain the Company Stockholder Approval,116,125,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Efforts to Consummate the Mergers,116,125,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Company Indebtedness,118,127,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Financing,121,130,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Indemnification and Insurance,122,131,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Employee Benefits Matters,122,131,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Additional Agreements,123,132,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Conditions to the Closing of the Mergers,123,132,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Termination of the Merger Agreement,124,133,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Termination Fees,126,135,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Fees and Expenses,127,136,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Withholding Taxes,127,136,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Amendment or Supplement,127,136,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf","Extension of Time, Waiver, etc.",127,136,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Governing Law,127,136,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Specific Enforcement,128,137,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROPOSAL 2: THE ADVISORY COMPENSATION PROPOSAL,129,138,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",PROPOSAL 3: THE ADJOURNMENT PROPOSAL,130,139,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT,131,140,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",FUTURE STOCKHOLDER PROPOSALS,135,144,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",WHERE YOU CAN FIND MORE INFORMATION,136,145,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",MISCELLANEOUS,137,146,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf","Annex A Agreement and Plan of Merger, dated as of March 1, 2023",A-1,147,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex B Opinion of Citigroup Global Markets Inc.,B-1,229,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex C Opinion of Goldman Sachs & Co. LLC,C-1,232,UNDEFINED,UNDEFINED
+"Radius Global Infrastructure, Inc._20230505_DEFM14A_20858042_4661091.Pdf",Annex D Opinion of Barclays Capital Inc.,D-1,235,UNDEFINED,UNDEFINED
