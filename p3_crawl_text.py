@@ -41,9 +41,12 @@ def classify(section_name, section_body):
             f"section title: {section_name}. section content: {truncated_section_body}"
         }])
     result = completion.choices[0].message.content
-    if result == "Termination" or result == "Indemnification" or result == "Confidentiality":
-        return result
-    print(f'result {result}')
+    if "Termination" in result:
+        return 'Termination'
+    if "Indemnification" in result:
+        return 'Indemnification'
+    if "Confidentiality" in result:
+        return 'Confidentiality'
     return "None"
 
 
@@ -121,8 +124,7 @@ def add_section_bodies(pdf_path):
 
         # print(f'TEXT: \n {text}')
 
-        # classification = classify(section_name, text)
-        classification = "None"
+        classification = classify(section_name, text)
 
         # Formatting ensures that line breaks in the PDF do not overflow beyond current cell.
         line[Section_Text_Index] = f'"{text}"'
@@ -135,18 +137,18 @@ def add_section_bodies(pdf_path):
 
 
 def iterate_folder(folder_path):
-    final_result = {}
+    i = 0
     for filename in os.listdir(folder_path):
         if filename.lower().endswith('.pdf'):
             pdf_path = os.path.join(folder_path, filename)
-
             add_section_bodies(pdf_path)
-    print(final_result)
+            i += 1
+            print(f"Completed {pdf_path}: {i}/100")
 
 
-# iterate_folder("dataset")
+iterate_folder("dataset")
 
-# Unit tests
-filename_global = 'Zendesk MA.Pdf'
-pdf_path_global = f'dataset/{filename_global}'
-add_section_bodies(pdf_path_global)
+# # Unit tests
+# filename_global = 'Archaea Energy Inc._20221114_DEFM14A_20445339_4545162.Pdf'
+# pdf_path_global = f'dataset/{filename_global}'
+# add_section_bodies(pdf_path_global)
