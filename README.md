@@ -16,9 +16,7 @@
 
 As seen in this screenshot, part 1 successfully identifies non-continuous table of contents pages in a PDF (page 7, 8, 10 in the image). It successfully skips blank pages like page 8 and pages of text like page 11.
 
-<div style="text-align: center;">
 <img src="images/identify_toc.png" alt="alt text" width="400"/>
-</div>
 
 <br />
 
@@ -40,11 +38,10 @@ As seen in this screenshot, part 1 successfully identifies non-continuous table 
 
 As seen in the screenshot, part 2 successfully identifies the section header, referenced page number as well as the zero-indexed page number. Given that there can be duplicate section header names that reference different parts of the document, the algorithm takes care to account for duplicates as seen in "the merger" example.
 
-<div style="text-align: center;">
 <img src="images/duplicate section names.png" alt="alt text" width="400"/>
-</div>
 
-- [Decision] Include the referenced page numbers and _real_ zero-indexed page number for a section header because they're different and both provide meaningful information. Referenced page numbers is the number at the bottom of the page on the printed PDF, the zero-indexed page number is the number the digital version of the PDf uses. Notice the different here:
+- [Decision] Include the referenced page numbers and _real_ zero-indexed page number for a section header because they're different and both provide meaningful information. Referenced page numbers is the number at the bottom of the page on the printed PDF, the zero-indexed page number is the number the digital version of the PDf uses. Notice the difference here:
+
   <img src="images/page_number_difference.png" alt="alt text" width="300"/>
 
 - [Assumption / Limitation] Continued the assumption from step 1 that a TOC is a list of links. Without this assumption, I would not be able to identify the _real_ zero-indexed page number of a section. This is limitation for PDFs that have unlinked TOCs like `PREFERRED APARTMENT COMMUNITIES INC_20220414_DEFM14A_20015574_4442255` but worked very well for all other examples in the dataset.
@@ -61,11 +58,11 @@ As seen in the screenshot, part 2 successfully identifies the section header, re
 
 ### Step 3: Populate Section Body and Classify
 
-- [Decision / Limitation] The text between `Section_n_Page_Start` and `Section_n+1_Page_Start` and _overestimates_ the text under section `n`. It is crucial to trim down the text by removing the text before `section_n_title` and after `section_n+1_title`, using the trim functions I implemented. One limitation, however, is that we're matching by section name, and so if the section name appears in a paragraph other than the section name, the trimming will be off by a couple paragraphs. 
+- [Decision / Limitation] The text between `Section_n_Page_Start` and `Section_n+1_Page_Start` and _overestimates_ the text under section `n`. It is crucial to trim down the text by removing the text before `section_n_title` and after `section_n+1_title`, using the trim functions I implemented. One limitation, however, is that we're matching by section name, and so if the section name appears in a paragraph other than the section name, the trimming will be off by a couple paragraphs.
 
-    For example, in the example below, "the merger" appears on the last page before "The Merger" section name, so we will over trim the section body contents. 
-    We can improve this limitation by using regex matching so that we take into account. Hence, in the example below, we will not trim at the highlighted section because of the case difference. 
-    Still, there will be cases where the case matches the section title exactly and in those instances our section body column will be missing a couple sentences. 
+  For example, in the example below, "the merger" appears on the last page before "The Merger" section name, so we will over trim the section body contents.
+  We can improve this limitation by using regex matching so that we take into account. Hence, in the example below, we will not trim at the highlighted section because of the case difference.
+  Still, there will be cases where the case matches the section title exactly and in those instances our section body column will be missing a couple sentences.
 
     <img src="images/trimming.png" width="300" />
 
