@@ -114,7 +114,7 @@ def iterate_folder(folder_path):
 # Main
 iterate_folder("dataset")
 
-# # Unit Tests
+# # Retry on failed PDFs: Update 'files' with the failed PDF paths.
 # files = [
 #     'Zendesk MA.Pdf',
 #     'Coupa Software Inc_20230123_DEFM14A_20571922_4573621.Pdf',
