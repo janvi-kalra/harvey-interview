@@ -99,9 +99,6 @@ def add_section_bodies(pdf_path):
     updated_data = [header]
 
     for i, line in enumerate(lines):
-        # if (i != 4):
-        #     updated_data.append(line)
-        #     continue
         section_name = line[Section_Name_Index]
         text = ""
 
@@ -110,9 +107,6 @@ def add_section_bodies(pdf_path):
         search_end = get_search_end(lines, i, doc)
 
         for page_num in range(search_start, search_end):
-            # print(
-            #     f"searching for section_name {section_name}: search_start {search_start + 1} search_end {search_end}"
-            # )
             page = doc.load_page(page_num)
             page_text = page.get_text()
             if page_num == search_start:
@@ -121,8 +115,6 @@ def add_section_bodies(pdf_path):
                 page_text = trim_search_end_page(page_text, next_section_name)
 
             text += page_text
-
-        # print(f'TEXT: \n {text}')
 
         classification = classify(section_name, text)
 
