@@ -16,7 +16,7 @@
 
 As seen in this screenshot, part 1 successfully identifies non-continuous table of contents pages in a PDF (page 7, 8, 10 in the image). It successfully skips blank pages like page 8 and pages of text like page 11.
 
-<img src="images/identify_toc.png" alt="alt text" width="400"/>
+<img src="images/identify_toc.png" alt="alt text" width=""/>
 
 <br />
 
@@ -28,7 +28,7 @@ As seen in this screenshot, part 1 successfully identifies non-continuous table 
 
   For example, in the screenshot below you can see that this method successfully disregarded "page 14" - a false positive triggered by the (page x) citations on the page
 
-    <img src="images/false_positives.png" alt="alt text" width="500"/>
+    <img src="images/false_positives.png" alt="alt text" width=""/>
 
 - [Decision] Save the results of the TOC page map into `p1_identify_toc_pages.py` rather than making it one continuous execution between step 1 and step 2. Given that LLMs are non-deterministic, the accuracy of step 1 is not guaranteed. Saving the results into `p1_identify_toc_pages` enabled me to run step 1 multiple times and choose the _most accurate_ run of step 1. This is crucial because the results of step 2 and 3 are hinged on the accuracy of step 1, so an inaccuracy here can lead to exponential downstream errors.
 
@@ -38,11 +38,11 @@ As seen in this screenshot, part 1 successfully identifies non-continuous table 
 
 As seen in the screenshot, part 2 successfully identifies the section header, referenced page number as well as the zero-indexed page number. Given that there can be duplicate section header names that reference different parts of the document, the algorithm takes care to account for duplicates as seen in "the merger" example.
 
-<img src="images/duplicate section names.png" alt="alt text" width="400"/>
+<img src="images/duplicate section names.png" alt="alt text" width=""/>
 
 - [Decision] Include the referenced page numbers and _real_ zero-indexed page number for a section header because they're different and both provide meaningful information. Referenced page numbers is the number at the bottom of the page on the printed PDF, the zero-indexed page number is the number the digital version of the PDf uses. Notice the difference here:
 
-  <img src="images/page_number_difference.png" alt="alt text" width="300"/>
+  <img src="images/page_number_difference.png" alt="alt text" width=""/>
 
 - [Assumption / Limitation] Continued the assumption from step 1 that a TOC is a list of links. Without this assumption, I would not be able to identify the _real_ zero-indexed page number of a section. This is limitation for PDFs that have unlinked TOCs like `PREFERRED APARTMENT COMMUNITIES INC_20220414_DEFM14A_20015574_4442255` but worked very well for all other examples in the dataset.
 
@@ -54,7 +54,7 @@ As seen in the screenshot, part 2 successfully identifies the section header, re
 
   This is an example of where that matters: the LLM will return "Material U.S. Federal Income Tax Considerations" and so if we were to do an exact string page it would fail because the LLM section name is missing "(page 57)". Doing a substring match fixes this edge case.
 
-  <img src="images/substring.png" alt="alt text" width="300"/>
+  <img src="images/substring.png" alt="alt text" width=""/>
 
 ### Step 3: Populate Section Body and Classify
 
@@ -64,7 +64,7 @@ As seen in the screenshot, part 2 successfully identifies the section header, re
   We can improve this limitation by using regex matching so that we take into account. Hence, in the example below, we will not trim at the highlighted section because of the case difference.
   Still, there will be cases where the case matches the section title exactly and in those instances our section body column will be missing a couple sentences.
 
-    <img src="images/trimming.png" width="300" />
+    <img src="images/trimming.png" width="" />
 
 - [Decision] When classifying the section body as Termination/Indemnification/Confidentiality, the section body can be very large (ex: spanning 10 PDF pages). The LLM has a max context window, so truncate the section body using the 1 token ~= 4 chars estimation/assumption. Add a 5,000 char buffer to account for the system prompt because that contributes to the context window as well.
 
